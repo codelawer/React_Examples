@@ -12,12 +12,44 @@
 // Spend time practicing the style of your Joke component
 
 import React from 'react';
-import './App.css';
+import Joke from './components/Joke';
 
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Joke
+        jokes={{
+          answer: 'When someone leaves, it’s because someone else is about to arrive.',
+        }}
+      />
+
+      <Joke
+        jokes={{
+          question: 'Say something about money?',
+          answer:
+            'Money is not everything but make sure you earn enough before thinking such nonsense.',
+        }}
+      />
+      <Joke
+        jokes={{
+          question: 'When are you right?',
+          answer: "Whether you think you can or you think you can't, you're right.",
+        }}
+      />
+      <Joke
+        jokes={{
+          question: 'What do you think about dream?',
+          answer:
+            "Dream is not the thing you see in sleep but is that thing that doesn't let you sleep.",
+        }}
+      />
+      <Joke
+        jokes={{
+          question: 'What will you be regret in the future most?',
+          answer:
+            'Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.',
+        }}
+      />
     </div>
   );
 }
