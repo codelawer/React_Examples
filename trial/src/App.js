@@ -1,22 +1,32 @@
-/* 
-Given a list of products (as an array of objects, as seen in productsData.js)
-render a <Product /> component (which you'll also need to create) for each
-product in the list.
+import React, { Component } from 'react';
 
-Make sure to use the array's `.map()` method to create these components, and 
-don't forget to pass a `key` prop to it to avoid the warning.
-*/
+// Given a stateless functional component, add state to it
+// state should have a property called `isLoggedIn` which is a boolean
+// (true if logged in, false if not)
+// Then, give your best shot at rendering the word "in" if the user is logged in
+// or "out" if the user is logged out.
 
-import React from 'react';
-import Product from './components/Product';
-import products from './components/vschoolProducts';
-import './style.css';
+export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isLoggedIn: false,
+    };
+  }
 
-function App() {
-  const pro = products.map(item => (
-    <Product key={item.id} pros={{ name: item.name, desc: item.description, price: item.price }} />
-  ));
-
-  return <div>{pro}</div>;
+  render() {
+    let wordDisplay;
+    if (this.state.isLoggedIn === true) {
+      wordDisplay = 'in';
+    } else {
+      wordDisplay = 'out';
+    }
+    return (
+      <div>
+        <h1>You are currently logged {wordDisplay}</h1>
+      </div>
+    );
+  }
 }
-export default App;
+
+// sgorcut == "rccp"
