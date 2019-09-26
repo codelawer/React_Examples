@@ -1,6 +1,7 @@
-**ES7 React/Redux/GraphQL/React-Native snippets
+**_ES7 React/Redux/GraphQL/React-Native snippets_**
 
-// rcc
+**rcc**
+
 import React, { Component } from 'react';
 
 export default class App extends Component {
@@ -8,14 +9,18 @@ export default class App extends Component {
     return <div></div>;
   }
 }
-// imrc
+
+**imrc**
+
 import React, { Component } from 'react'
 
-// imrr
+**imrr**
+
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 
-// rconst
+**rconst**
+
 constructor(props) {
   super(props)
 
