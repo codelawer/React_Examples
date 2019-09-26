@@ -2,25 +2,25 @@
 
 **rcc**
 
-import React, { Component } from 'react';
+```import React, { Component } from 'react';
 
 export default class App extends Component {
   render() {
     return <div></div>;
   }
 }
-
+```
 **imrc**
 
-import React, { Component } from 'react'
+```import React, { Component } from 'react'```
 
 **imrr**
 
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+```import { BrowserRouter as Router, Route, Link } from 'react-router-dom'```
 
 
 **rconst**
-
+```
 constructor(props) {
   super(props)
 
@@ -28,3 +28,4 @@ constructor(props) {
      
   }
 }
+```
